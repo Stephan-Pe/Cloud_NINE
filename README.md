@@ -6,5 +6,4 @@
 
 - wenn Ihr lust habt können wir diesen Kanal mit eigenen Branchs experimentl betreiben.
 
-- dem Path vom o habe ich die class blue und den fill rebhex0000ff hinzugefügt
- 
+- dem Path vom o im *cloud_nine_vers* habe ich die class blue und den fill rebhex0000ff hinzugefügt
