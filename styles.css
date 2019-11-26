@@ -5,3 +5,19 @@ body {
     min-height: 100%;
     background: linear-gradient(90deg, #0000ff 0%, #ccccff) 100%;
 }
+.nav {
+    width: 80px;
+    height: 80px;
+    background-color: #ff3300;
+    box-shadow: 2px 2px 8px #801a00;
+    border-radius: 50%;
+    margin: 40px;
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.nav:hover {
+    transform: scale(1.4);
+    background-color: #00ff00;
+}
