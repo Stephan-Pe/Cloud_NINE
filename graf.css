@@ -1,0 +1,125 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+#wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+
+}
+
+path {
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0, 0.23, 1,.1);
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+    90% {
+        fill: rgba(255, 255, 255, 0);
+    }
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+
+}
+#Layer-3{
+    animation: glasses 1200ms ease-in-out infinite;
+}
+@keyframes glasses {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#blood {
+    animation: blood 700ms cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite;
+}
+#trueblood {
+    animation: trueblood 1200ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 200ms infinite;
+}
+#tong, #tongtwo {
+    animation: tong 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 300ms infinite;
+}
+@keyframes tong {
+    0% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+#nose, #nosey {
+    animation: nose 2000ms cubic-bezier(0.55, 0.055, 0.675, 0.19) 400ms infinite;
+}
+@keyframes nose {
+    0% {
+        transform: translateX(3px);
+    }
+    100% {
+        transform: translateX(-2px);
+    }
+}
+
+@keyframes blood {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(100px);
+    }
+}
+@keyframes trueblood {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(100px);
+    }
+}
+.nav {
+    width: 80px;
+    height: 80px;
+    background-color: #ff3300;
+    box-shadow: 2px 2px 8px #801a00;
+    border-radius: 50%;
+    margin: 40px;
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.nav:hover {
+    transform: scale(1.4);
+    background-color: #00ff00;
+}
